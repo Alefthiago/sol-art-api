@@ -55,4 +55,14 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+    
+    function unauthorized()
+    {
+        http_response_code(401);
+        exit();
+    }
+
+    //  FUNCOES PARA AUTH.   //
+
+    // /FUNCOES PARA AUTH.   //
 }
